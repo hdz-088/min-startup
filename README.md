@@ -1,3 +1,5 @@
+![screenshot](./git-assets/ss.png)
+
 # Custom Browser Start Page
 
 Just a simple start page to replace the default one.

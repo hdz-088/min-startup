@@ -2,7 +2,11 @@ const links = {
   a: "https://github.com",
   s: "https://youtube.com",
   d: "https://reddit.com",
-  f: "https://monkeytype.com",
+  f: {
+    href: "https://calendar.google.com",
+    alias: "calendar",
+  },
+  g: "https://tldraw.com",
 };
 
 /**
@@ -25,12 +29,19 @@ document.addEventListener("DOMContentLoaded", () => {
   for (const [key, value] of Object.entries(links)) {
     let list_item = document.createElement("li");
     let list_link = document.createElement("a");
-    const display_title = value
-      .replace("https://", "")
-      .replace(/\.[a-zA-Z0-9]+$/, "");
+
+    let display_title = "nan";
+    if (typeof value === "object") {
+      display_title = value.alias;
+    } else {
+      display_title = value
+        .replace("https://", "")
+        .replace(/\.[a-zA-Z0-9]+$/, "");
+    }
 
     list_link.innerText = `[${key}] ${display_title}`;
     list_link.value = value;
+    list_link.href = value;
 
     list_item.appendChild(list_link);
     list_element.appendChild(list_item);

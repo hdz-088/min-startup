@@ -1,12 +1,10 @@
-![screenshot](./git-assets/ss.png)
-
 # Custom Browser Start Page
 
 Just a simple start page to replace the default one.
 
 ## Usage
 
-Clone the repository:
+Clone the repository and modify the json file.
 
 ```zsh
 git clone https://github.com/m1chaelwilliams/min-startup.git

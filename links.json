@@ -1,0 +1,21 @@
+{
+  "a": "https://youtube.com",
+  "s": "https://github.com",
+  "d": "https://chatgpt.com",
+  "z": {
+    "href": "https://sounotes.vercel.app/",
+    "alias": "SOUNotes"
+  },
+  "c": {
+    "href": "https://classroom.google.com/c/NjE2OTM2Mzk2MTUy",
+    "alias": "classroom"
+  },
+  "q": {
+    "href": "https://drive.google.com/",
+    "alias": "drive"
+  },
+  "w": {
+    "href": "https://mail.google.com/mail/u/0/",
+    "alias": "gmail"
+  }
+}
